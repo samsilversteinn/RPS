@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(67, 208, 255);
+
+}
+.items{
+    background-color: gray;
+    border-radius: 0.5rem;
+    padding:15px;
+}
