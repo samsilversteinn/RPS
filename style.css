@@ -7,3 +7,10 @@ body {
     border-radius: 0.5rem;
     padding:15px;
 }
+.info{
+    background-color: lightblue;
+    border-radius: 0.5rem;
+}
+.infocol{
+    border: 2px black dashed;
+}
