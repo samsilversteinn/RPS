@@ -5,6 +5,7 @@ const getUserChoice = (userInput) => {
     } else {
         console.log("Error!");
     }
+
 };
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
@@ -19,7 +20,7 @@ function getComputerChoice() {
             return "scissors";
             break;
     }
-}
+} //This function makes the computer's decision random.
 function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return "The game is a tie!";
@@ -45,7 +46,7 @@ function determineWinner(userChoice, computerChoice) {
             return "You won!";
         }
     }
-}
+} // Determines who won.
 let player = 0;
 let computer = 0;
 function playerScore(userChoice, computerChoice) {
@@ -53,14 +54,14 @@ function playerScore(userChoice, computerChoice) {
         player += 1;
     } 
     return player;
-}
+} // If the player won it adds 1 to the score for the player.
 
 function computerScore(userChoice, computerChoice) {
     if (determineWinner(userChoice, computerChoice) === "The computer won!") {
         computer += 1;
     } 
     return computer;
-}
+} // If the computer won it adds 1 to the score for the computer.
 
 const playGame = (userInput) => {
     const userChoice = getUserChoice(userInput);
